@@ -1,0 +1,36 @@
+.paginator {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.paginator__item {
+  margin-right: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.paginator__item a {
+  display: block;
+  padding: 10px 19px;
+  color: #fff;
+  background-color: #000;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #663d15;
+  }
+}
+
+.paginator__item--current a {
+  display: block;
+  margin-right: 5px;
+  padding: 10px 19px;
+  color: #000;
+  background-color: #fff;
+}

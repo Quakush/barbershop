@@ -1,0 +1,18 @@
+.column {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  padding: 50px 80px;
+  color: #000;
+  background-color: #f8f5f2;
+  background-image: url("../img/bckgr.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+
+  & h2 {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+}

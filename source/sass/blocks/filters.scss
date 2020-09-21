@@ -1,0 +1,27 @@
+.filters {
+  width: 180px;
+}
+
+.filters fieldset {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  border: none;
+
+  &:first-child {
+    margin-bottom: 35px;
+  }
+}
+
+.filters legend {
+  margin-bottom: 26px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.filters ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 18px;
+}

@@ -1,0 +1,32 @@
+.main-header {
+  margin-bottom: 75px;
+  background-color: transparent;
+}
+
+.inner-page .main-header {
+  background-color: #000;
+}
+
+.main-header__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner-page .main-header__nav {
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.main-header__logo {
+  order: 2;
+  width: 368px;
+  height: 153px;
+}
+
+.inner-page .main-header__logo {
+  order: 0;
+  width: 111px;
+  height: 24px;
+  padding: 23px 20px;
+}

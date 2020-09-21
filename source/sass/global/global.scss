@@ -1,0 +1,86 @@
+html,
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #000;
+  background-image: url("../img/bg-index.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.btn {
+  display: inline-block;
+  margin-right: 16px;
+  padding: 10px 30px;
+  font: inherit;
+  text-align: center;
+  color: #fff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+    background-color: #000;
+  }
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: #663d15;
+}
+
+.inner-page {
+  color: #000;
+  background-color: #f9f6f3;
+  background-image: url("../img/bckgr.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+
+  & .main-header {
+    margin-bottom: 50px;
+  }
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}

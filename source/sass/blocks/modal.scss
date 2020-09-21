@@ -1,0 +1,12 @@
+.modal {
+  color: #000;
+  background-color: #f8f3f0;
+  background-image: url(../img/bckgr.png);
+  background-position: 0 0;
+  background-repeat: repeat;
+
+  & h2 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}

@@ -1,0 +1,28 @@
+.user-navigation {
+  display: flex;
+  max-width: 140px;
+}
+
+.user-navigation a {
+  position: relative;
+  padding-left: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 24px;
+    width: 16px;
+    height: 18px;
+    background-image: url("../img/login.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.3;
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:active::before {
+    opacity: 1;
+  }
+}

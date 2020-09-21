@@ -1,0 +1,41 @@
+.social {
+  text-align: center;
+
+  & ul {
+    list-style: none;
+  }
+}
+
+.social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 141px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  color: #fff;
+  background-color: #000;
+
+  &:hover,
+  &:focus {
+    background-color: #fff;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: #000;
+  }
+}
+
+.social b {
+  display: block;
+  margin-bottom: 15px;
+}

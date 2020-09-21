@@ -1,0 +1,68 @@
+.form-filter__input:hover + label,
+.form-filter__input:focus {
+  color: #663d15;
+}
+
+.form-filter__input:disabled + label {
+  color: #000;
+  opacity: 0.5;
+}
+
+.form-filter__option {
+  margin-bottom: 19px;
+  padding-left: 45px;
+}
+
+.form-filter__option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-filter__input--checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000;
+}
+
+.form-filter__input--checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+
+.form-filter__input--radio + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: -1px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.form-filter__input--radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+
