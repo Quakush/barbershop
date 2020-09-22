@@ -12,7 +12,7 @@ var mapClose = mapPopup.querySelector('.modal__close--map');
 
 var isStorageSupport = true;
 var storage = '';
-console.log(mapLink);
+
 try {
   storage = localStorage.getItem('login');
 } catch (err) {
