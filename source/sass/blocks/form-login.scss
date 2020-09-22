@@ -1,5 +1,9 @@
 .form-login input[type="text"],
 .form-login input[type="password"] {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 10px 15px;
+  padding-right: 40px;
   font: inherit;
   color: #000;
   text-transform: uppercase;
@@ -24,4 +28,68 @@
   &:focus {
     text-decoration: none;
   }
+}
+
+.form-login p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.form-login__user {
+  background-image: url("../img/user.svg");
+  background-position: 270px center;
+  background-repeat: no-repeat;
+}
+
+.form-login__password {
+  background-image: url("../img/lock.svg");
+  background-position: 270px center;
+  background-repeat: no-repeat;
+}
+
+.form-login__remember {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.form-login__checkbox {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.form-login__checkbox input[type="checkbox"] + .form-login__indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000;
+}
+
+.form-login__checkbox input[type="checkbox"]:focus + .form-login__indicator {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.form-login__checkbox input[type="checkbox"]:checked + .form-login__indicator::before,
+.form-login__checkbox input[type="checkbox"]:checked + .form-login__indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+}
+
+.form-login__checkbox input[type="checkbox"]:checked + .form-login__indicator::before {
+  transform: rotate(45deg);
+}
+
+.form-login__checkbox input[type="checkbox"]:checked + .form-login__indicator::after {
+  transform: rotate(-45deg);
 }

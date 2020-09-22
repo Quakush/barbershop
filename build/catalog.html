@@ -21,7 +21,7 @@
         <li class="main-navigation__item"><a href="contacts.html">Контакты</a></li>
       </ul>
       <ul class="main-navigation__user user-navigation">
-        <li class="user-navigation__item"><a href="login.html">Вход</a></li>
+        <li class="user-navigation__item"><a href="login.html" class="user-navigation__link">Вход</a></li>
       </ul>
     </nav>
   </header>
@@ -223,7 +223,7 @@
 
   <section class="modal modal__login">
     <h2>Личный кабинет</h2>
-    <p>Введите свой логин и пароль.</p>
+    <p class="modal__description">Введите свой логин и пароль.</p>
     <form action="#" class="modal__form form-login" method="POST">
       <p>
         <label for="user-login" class="visually-hidden">Логин</label>
@@ -243,7 +243,7 @@
       </p>
       <button class="btn" type="submit">Войти</button>
     </form>
-    <button type="button" class="modal__close">Закрыть
-  </button></section>
+    <button type="button" class="modal__close modal__close--login">Закрыть</button>
+  </section>
 </body>
 </html>

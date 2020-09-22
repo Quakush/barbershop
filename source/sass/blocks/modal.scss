@@ -1,12 +1,138 @@
 .modal {
+  position: fixed;
   color: #000;
   background-color: #f8f3f0;
   background-image: url(../img/bckgr.png);
   background-position: 0 0;
   background-repeat: repeat;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 
   & h2 {
     font-size: 30px;
     line-height: 42px;
+  }
+}
+
+.modal__login {
+  display: none;
+  top: 120px;
+  left: 50%;
+  width: 300px;
+  margin-left: -230px;
+  padding: 50px 80px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 19px;
+    height: 3px;
+    background-color: #d0d0d0;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.modal__login h2 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.modal__description {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.modal__login .btn {
+  width: 100%;
+  margin-right: 0;
+}
+
+.modal__map {
+  display: none;
+  top: 50%;
+  left: 50%;
+  width: 766px;
+  height: 561px;
+  margin-top: -280px;
+  margin-left: -390px;
+  border: 7px solid #fff;
+}
+
+.modal__map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
+}
+
+.modal__map iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+}
+
+.modal__show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal__error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
